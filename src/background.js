@@ -33,13 +33,23 @@ if (env.name !== 'production') {
 app.on('ready', function () {
     setApplicationMenu();
 
-    var mainWindow = createWindow('main', {
-        width: 1000,
-        height: 600
-    });
+	mainWindow = createWindow('main', {
+		width: 850,
+		height: 600,
+		minWidth: 775,
+		minHeight: 500,
+		fullscreen: false,
+        show: false,
+		backgroundColor: '#2D2D30',
+		titleBarStyle:'hidden-inset',
+		frame:true
+	});
 
     mainWindow.loadURL('file://' + __dirname + '/../app/pages/app.html');
 
+    mainWindow.webContents.on('did-finish-load', function() {
+		mainWindow.show();
+	});
     if (env.name === 'development') {
         mainWindow.openDevTools();
     }
