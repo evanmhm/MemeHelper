@@ -14,7 +14,8 @@ html, body {
 body {
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
+    padding-top: 75px;
     font-family: sans-serif;
     background-color: #303030;
     color: #E0E0E0;
@@ -23,6 +24,7 @@ body {
 a {
     text-decoration: none;
 }
+
 
 #top-bar {
     position: absolute;
@@ -55,6 +57,7 @@ li:hover {
 
 .container {
     text-align: center;
+    margin-top: 10px;
 }
 
 #title-bar {
@@ -69,4 +72,8 @@ li:hover {
     /*background-color: #FFFFFF;*/
     font-family: sans-serif;
     z-index: 9999;
+}
+
+#submit {
+    margin-top: 15px;
 }

@@ -1,5 +1,6 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Meme Text Generator</title>
@@ -11,6 +12,7 @@
     <script src="../assets/js/main.js"></script>
 
 </head>
+
 <body>
     <div id="title-bar">
     </div>
@@ -18,18 +20,17 @@
         <ul>
             <li>👏</li>
             <li>Ａ</li>
-        <ul>
+            <ul>
     </div>
     <div class="container">
-        <h1 id="greet"></h1>
-        <p class="subtitle">
-            Welcome to the Meme Text Generator app.
-        </p>
-        <p class="subtitle">
-            Will be real soon.
-        </p>
-        <button id="submit" class="btn sign-in btn-primary">Button</button>
+        <p>Choose a meme mode above to convert the text</p>
+        <textarea class="form-control" id="inputTA" rows="3" placeholder="Input"></textarea>
+        <h3>⬇️</h3>
+        <textarea readonly class="form-control" id="outputTA" rows="3" placeholder="Output"></textarea>
+
+        <button id="submit" class="btn sign-in btn-primary">Copy to Clipboard</button>
     </div>
 
 </body>
+
 </html>
