@@ -9,7 +9,6 @@
 
     <link href="../assets/css/main.css" rel="stylesheet" type="text/css">
 
-    <script src="../assets/js/main.js"></script>
 
 </head>
 
@@ -18,8 +17,9 @@
     </div>
     <div id="top-bar">
         <ul>
-            <li>👏</li>
-            <li>Ａ</li>
+            <li id="emoji">👏</li>
+            <li id="aesthetic">Ａ</li>
+            <li id="random">R</li>
             <ul>
     </div>
     <div class="container">
@@ -31,6 +31,10 @@
         <button id="submit" class="btn sign-in btn-primary">Copy to Clipboard</button>
     </div>
 
+    <script>
+        window.$ = window.jQuery = require('jquery');
+    </script>
+    <script src="../assets/js/main.js"></script>
 </body>
 
 </html>
