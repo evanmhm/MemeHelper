@@ -34,9 +34,9 @@ app.on('ready', function () {
     setApplicationMenu();
 
 	mainWindow = createWindow('main', {
-		width: 850,
-		height: 600,
-		minWidth: 775,
+		width: 375,
+		height: 500,
+		minWidth: 275,
 		minHeight: 500,
 		fullscreen: false,
         show: false,
