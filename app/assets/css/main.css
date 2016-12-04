@@ -21,6 +21,17 @@ body {
     color: #E0E0E0;
 }
 
+textarea[readonly="readonly"], textarea[readonly] {
+    background-color: #FFFFFF;
+    color: blue;
+}
+
+#output-TA {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
 a {
     text-decoration: none;
 }

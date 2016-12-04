@@ -1,14 +1,20 @@
+var currentMode = "emoji";
 
-$(document).ready(function () {
-    $("#emoji").click(function(){
-        console.log('emoji mode');
-    });
+$("#emoji").click(function(){
+    currentMode = "emoji";
+    update($("#input-TA").val());
+});
 
-    $("#aesthetic").click(function(){
-        console.log('aesthetic mode');
-    });
+$("#aesthetic").click(function(){
+    currentMode = "aesthetic";
+    update($("#input-TA").val());
+});
 
-    $("#random").click(function(){
-        console.log('random mode');
-    });
+$("#random").click(function(){
+    currentMode = "random";
+    update($("#input-TA").val());
+});
+
+$("#input-TA").on("input", function() {
+	update($("#input-TA").val());
 });
