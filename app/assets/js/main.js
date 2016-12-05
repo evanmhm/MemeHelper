@@ -18,3 +18,7 @@ $("#random").click(function(){
 $("#input-TA").on("input", function() {
 	update($("#input-TA").val());
 });
+
+$("#randomize").click(function() {
+    update($("#input-TA").val());
+})
