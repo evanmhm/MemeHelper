@@ -1,0 +1,34 @@
+#help {
+    display: inline;
+}
+
+#title-bar {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    z-index: 9999;
+}
+
+textarea {
+    margin-top: 15px;
+}
+
+#output-TA {
+    background-color: white;
+    color: black;
+    opacity: 1;
+}
+
+#randomize {
+    display: none;
+}
+
+#submit {
+    margin-top: 15px;
+}

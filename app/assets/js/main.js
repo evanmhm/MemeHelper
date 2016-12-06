@@ -1,4 +1,4 @@
-var currentMode = "emoji";
+var currentMode = "";
 
 $("#emoji").click(function(){
     currentMode = "emoji";

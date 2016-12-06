@@ -1,5 +1,6 @@
-
 function update(input) {
+    $("#help").css("display", "none");
+
     var output = [];
     if (currentMode === "emoji") {
         output.push("");
