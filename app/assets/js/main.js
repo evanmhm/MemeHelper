@@ -28,11 +28,11 @@ $("#randomize").click(function() {
 });
 
 $("#copy").click(function() {
-    content = $("#output-TA").val();
-    clipboard.writeText(content);
-    if ($('#form').css('opacity') == 0) {
-        $('#form').css('opacity', 1);
-    } else {
-        $('#form').css('opacity', 0);
+    if ($("#output-TA").val()) {
+        content = $("#output-TA").val();
+        clipboard.writeText(content);
+        $('#check').addClass("fadeAnimation").one("animationend", function() {
+            $("#check").removeClass("fadeAnimation");
+        });
     }
 });
