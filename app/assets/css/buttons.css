@@ -1,0 +1,19 @@
+#emoji:after, #aesthetic:after, #random:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background-color: #3498db;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+    z-index: 999;
+}
+
+#emoji.selected:after, #aesthetic.selected:after, #random.selected:after {
+    width: 200%;
+    left: -50%;
+    background-color: #2ecc71;
+}

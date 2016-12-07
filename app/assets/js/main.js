@@ -3,19 +3,14 @@ const {
 } = require('electron');
 
 var currentMode = "";
-
-$("#emoji").click(function() {
-    currentMode = "emoji";
-    update($("#input-TA").val());
-});
-
-$("#aesthetic").click(function() {
-    currentMode = "aesthetic";
-    update($("#input-TA").val());
-});
-
-$("#random").click(function() {
-    currentMode = "random";
+var lastClicked;
+$(".top-btn").click(function() {
+    if ($(this).attr("id") !== lastClicked) {
+        $("#" + lastClicked).removeClass('selected');
+        $(this).addClass('selected');
+        currentMode = $(this).attr("id");
+        lastClicked = $(this).attr("id");
+    }
     update($("#input-TA").val());
 });
 
