@@ -20,7 +20,6 @@ function update(input) {
     if (currentMode === "random") {
         $("#randomize").css("display", "inline");
         intermediate = input.toLowerCase().split("");
-        console.log(intermediate);
         intermediate.forEach(function(letter) {
             if (Math.random() >= 0.5) {
                 output.push(letter.toUpperCase())

@@ -29,7 +29,6 @@ $("#randomize").click(function() {
 
 $("#copy").click(function() {
     content = $("#output-TA").val();
-    console.log($("#output-TA").val());
     clipboard.writeText(content);
     if ($('#form').css('opacity') == 0) {
         $('#form').css('opacity', 1);
