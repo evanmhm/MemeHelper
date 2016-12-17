@@ -1,0 +1,25 @@
+{
+  "name": "Meme-Helper",
+  "productName": "Meme-Helper",
+  "description": "A text converter to make text memes a little easier. Dreams to memes in miliseconds ™️",
+  "version": "1.0.0",
+  "author": "Evan Hopper-Moore",
+  "license": "MIT",
+  "main": "background.js",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "designmodo-flat-ui": "^2.3.0",
+    "fs-jetpack": "^0.7.0",
+    "jquery": "^2.2.3"
+  },
+  "osx": {
+    "build": "1",
+    "identifier": "io.github.evanmhm.memetext",
+    "LSApplicationCategoryType": "public.app-category.productivity",
+    "//codeSignIdentitiy": {
+      "dmg": "Developer ID Application: Company Name (APPIDENTITY)",
+      "MAS": "3rd Party Mac Developer Application: Company Name (APPIDENTITY)",
+      "MASInstaller": "3rd Party Mac Developer Installer: Company Name (APPIDENTITY)"
+    }
+  }
+}

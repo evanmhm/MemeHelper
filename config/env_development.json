@@ -1,4 +1,4 @@
 {
   "name": "development",
-  "description": "Add here any environment specific stuff you like."
+  "url": "127.0.0.1:3000"
 }
